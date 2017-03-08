@@ -1,0 +1,17 @@
+VMware Tools in a Debian 7 Guest
+Use the guest OS provided Open VM Tools or install the VMware Tools, as needed.
+Open VM Tools
+Open VM Tools is the open source implementation of VMware Tools and consist of a suite of virtualization utilities that improves the functionality, administration, and management of virtual machines on VMware hypervisors. VMware recommends using the Open VM Tools redistributed by the operating system vendors. For additional information, see knowledge base article 2073803, VMware support of open-vm-tools, at http://kb.vmware.com/kb/2073803.
+Install Open VM Tools
+  1. Add the following line to the /etc/apt/sources.list file.
+deb http://ftp.debian.org/debian/ wheezy main contrib
+  2. Run the commands:
+$ sudo apt-get update
+$ sudo apt-get install open-vm-tools
+
+VMware Tools in a Debian 8 Guest
+ 1. Add the following line to the /etc/apt/sources.list file.
+echo "deb http://ftp.debian.org/debian/ jessie main contrib" >> /etc/apt/sources.list
+  2. Run the commands:
+apt-get update
+apt-get install open-vm-tools
